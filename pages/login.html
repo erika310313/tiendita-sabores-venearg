@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../img/logo_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+<body>
+    
+    <section id="login" class="login">
+        <div class="titulos">
+            <img class="" src="../img/Logo Sabores Venearg (1).png" alt="" width="200" height="200">
+            <h2>Iniciar Sesión</h2>
+        </div>
+    
+        <div class="formulario-login">
+            <form id="form-login" onsubmit="return validarLogin(event)">
+                
+                <div class="campo">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario" required>
+                </div>
+    
+                <div class="campo">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+                </div>
+    
+                <button type="submit" class="btn">Iniciar sesión</button>
+                <button type="button" class="btn" onclick="resetearFormularioLogin()">Borrar Datos</button>
+            </form>
+        </div>
+    
+        <div class="registro">
+            <p>¿No tienes una cuenta? <a href="../pages/singUp.html" target="_blank">Regístrate</a></p>
+        </div>
+    </section>
+
+
+<script src="../JS/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../img/logo_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/paginaInicio.css">
+
+
+    <link rel="stylesheet" href="css/estilosPaginaInicio.css" type="text/css" media="all">
+</head>
+
+<body>
+
+    <section id="pedido" class="pedido">
+        <div class="titulos" id="mensajeBienvenida">
+            
+        </div>
+
+        <div class="titulos" id="imagenBienvenida">
+            <img class="" src="../img/Logo Sabores Venearg (1).png" alt="" width="300" height="300">
+        </div>
+
+        <div class="titulos">
+            <h2>Formulario de Pedido</h2>
+            <p class="lead">La fecha de entrega será coordinada telefónicamente.</p>
+        </div>
+
+        <div class="formulario-pedidos">
+
+            <h3 class="">Tu pedido</h3>
+
+            <form id="form-pedidos" action="">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Tu Apellido" required>
+                </div>
+
+                <div class="campo">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Usuario" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="tumail@gmail.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="direccion">Lugar de Entrega</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Calle, n°, localidad..." required>
+                </div>
+
+                <div class="campo">
+                    <div>
+                        <label for="country">Localidad</label>
+                        <select class="custom-select d-block w-100" id="country" required>
+                            <option value="">Seleccioná...</option>
+                            <option>Almagro</option>
+                            <option>Balvanera</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="state">Provincia</label>
+                        <select class="custom-select d-block w-100" id="state" required>
+                            <option value="">Seleccioná...</option>
+                            <option>CABA</option>
+                            <option>Buenos Aires</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="zip">Cod.Postal</label>
+                        <input type="text" class="form-control" id="zip" placeholder="" required>
+
+                    </div>
+                </div>
+
+                <hr>
+
+                <h3 class="">Forma de Pago</h3>
+
+                <div class="radio-container">
+                    <div class="custom-control custom-radio">
+                        <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                        <label class="custom-control-label" for="credit">Tarjeta de Crédito</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                        <label class="custom-control-label" for="debit">Mercado Pago</label>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="campo">
+                        <label for="cc-name">Nombre del Titular de la Tarjeta</label>
+                        <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                        <br>
+                        <small class="text-muted">Nombre como se muestra en la tarjeta</small>
+                    </div>
+
+                    <div class="campo">
+                        <label for="cc-number">Número de la tarjeta</label>
+                        <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="campo">
+                        <label for="cc-expiration">Fecha de Vto.</label>
+                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                    </div>
+                    <div class="campo">
+                        <label for="cc-cvv">Código</label>
+                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                    </div>
+                </div>
+
+                <div class="boton-container">
+                    <button type="submit" class="btn">Ingresar la Solicitud</button>
+                    <button type="button" class="btn" onclick="resetearFormularioPedido()">Borrar Datos</button>
+                    <button type="button" class="btn" id="cerrarSesion" onclick="">Cerrar Sesión</button>
+                </div>
+
+            </form>
+
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <!--INFORMACIÓN PRINCIPAL-->
+            <div class="footer-section">
+                <h4><strong>Sabores Venearg</strong></h4>
+                <div class="social">
+                    <div class="social-icons">
+                        <li><a href="https://www.facebook.com/Sabores.venearg"><img
+                                    src="img/png-transparent-black-and-white-dark-grey-facebook-transparent-on-dark-grey-icon-thumbnail-removebg-preview.png"
+                                    alt="facebook" width="50px" height="50px"></a></li>
+                        <li><a href="https://www.instagram.com/sabores.venearg"><img
+                                    src="img/png-transparent-computer-icons-white-instagram-icon-text-logo-area-thumbnail-removebg-preview.png"
+                                    alt="instagram" width="50px" height="50px"></a></li>
+                        <li><a href="https://wa.me/message/YZ36JFB4G6PKJ1"><img
+                                    src="img/png-clipart-telephone-call-logo-whatsapp-logo-computer-icons-whatsapp-cdr-text-thumbnail-removebg-preview.png"
+                                    alt="whatsapp" width="50px" height="50px"></a></li>
+                    </div>
+                </div>
+                <div>
+                    <p>&copy; 2024 Erika Oropeza</p>
+                </div>
+
+            </div>
+
+            <!--UBICACIÓN-->
+            <div class="footer-section">
+                <h4><strong>Estamos en:</strong></h4>
+                <div>
+                    <p><strong>Don Bosco 3700, Almagro <br>Ciudad Autónoma de Bs.As. - Argentina</strong></p>
+                </div>
+            </div>
+
+        <!--ENLACES-->
+        <div class="footer-section">
+            <h4><strong>Nosotros</strong></h4>
+            <ul class="footer-links">
+                <li><a href="../index.html"><strong>Comidas</strong></a></li>
+                <li><a href="../index.html"><strong>Postres</strong></a></li>
+                <li><a href="../index.html"><strong>Pedidos</strong></a></li>
+                <li><a href="../index.html"><strong>Contáctanos</strong></a></li>
+            </ul>
+        </div>
+        </div>
+    </footer>
+
+<script src="../JS/paginaInicio.js"></script>
+</body>
+
+</html>

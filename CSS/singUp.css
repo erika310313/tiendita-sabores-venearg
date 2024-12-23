@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #b0b1b3a8;
+    font-family: 'Noto Sans JP', sans-serif;
+    overflow-x: hidden;
+}
+
+.registro {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+img{
+    transition: all .5s;
+}
+
+img:hover{
+    transition: all .5s;
+    border-color: #35b5ba;
+    transform: translate(0px, -10px);
+    box-shadow: 0px 0px 10px 4px #7becf0;
+    border-radius: 100px;
+}
+
+.titulos h2 {
+    background: #35b5babe;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #35b5babe, #f1abc9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #35b5babe, #f1abc9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-color: transparent;
+    color: #393939;
+    /*---------------------*/
+    margin-top: 50px;
+    font-size: 40px;
+    text-align: center;
+    color: #8b1151;
+    margin-bottom: 1.5rem;
+}
+
+h2:hover{
+    color: #000000;
+}
+
+.formulario-registro {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.campo {
+    margin-bottom: 1.5rem;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.campo input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    margin: 0;
+    padding: 0.75rem 1.5rem;
+    background-color: #813689c5;    
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 500;
+    height: 55px;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+button:hover {
+    transition: all .5s;
+    background-color: #35b5ba;
+    color: white;
+    transform: translate(0px, -10px);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 4px #7becf0;
+}
+
+.avisoPassword{
+    background-color: white;
+    color: #c9c3c3;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 15px;
+    border-width: 2px;
+    text-align: center;
+}
+
+/* Estilos para el link de login */
+.login {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.login a {
+    color: #35b5ba;
+    text-decoration: none;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
