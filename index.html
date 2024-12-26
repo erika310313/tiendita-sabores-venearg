@@ -7,6 +7,7 @@
     <title>SaboresVenearg</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="img/logo_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
@@ -39,11 +40,15 @@
                 </li>
                 <li><a href="#reseñas">Reseñas</a></li>
                 <li><a href="#contacto">Contáctanos</a></li>
+                <li>
+                    <a href="/pages/carritoCompra.html" class="cart-icon" onclick="toggleCart()">🛒<span
+                            id="cart-count">0</span></a>
+                </li>
             </ul>
         </nav>
 
         <section class="contenidoDinamico" id="contenidoDinamico">
-                        
+
         </section>
 
     </header>
@@ -91,9 +96,19 @@
 
                             <div class="comidas-info">
                                 <h4 text="center">Pasticho / Lasagna de Carne</h4>
-                                <small>Precio.- $0000,00</small>
+                                <small>Precio.- $3.000,00</small>
                             </div>
                         </a>
+                    </div>
+                    <div class="comidas-actions">
+                        <button class="agregarAlCarrito" onclick="addToCart('Pasticho / Lasagna de Carne', 3000)">Agregar al carrito</button>
+                        <!-- Controles para modificar la cantidad -->
+                        <div class="cantidad-controls" style="display: none">
+                            <button class="btn-modificar" onclick="modificarCantidad('Pasticho / Lasagna de Carne', -1)">-</button>
+                            <span class="cantidad">1</span>
+                            <button class="btn-modificar" onclick="modificarCantidad('Pasticho / Lasagna de Carne', 1)">+</button>
+                            <button class="btn-eliminar" onclick="eliminarProducto('Pasticho / Lasagna de Carne')">🗑</button>
+                        </div>
                     </div>
                 </div>
 
@@ -104,9 +119,19 @@
 
                             <div class="comidas-info">
                                 <h4 text="center">Tequeños / Deditos de Queso</h4>
-                                <small>Precio.- $0000,00</small>
+                                <small>Precio.- $3.000,00</small>
                             </div>
                         </a>
+                    </div>
+                    <div class="comidas-actions">
+                        <button class="agregarAlCarrito" onclick="addToCart('Tequeños / Deditos de Queso', 3000)">Agregar al carrito</button>
+                        <!-- Controles para modificar la cantidad -->
+                        <div class="cantidad-controls" style="display: none">
+                            <button class="btn-modificar" onclick="modificarCantidad('Tequeños / Deditos de Queso', -1)">-</button>
+                            <span class="cantidad">1</span>
+                            <button class="btn-modificar" onclick="modificarCantidad('Tequeños / Deditos de Queso', 1)">+</button>
+                            <button class="btn-eliminar" onclick="eliminarProducto('Tequeños / Deditos de Queso')">🗑</button>
+                        </div>
                     </div>
                 </div>
 
@@ -118,9 +143,19 @@
 
                             <div class="comidas-info">
                                 <h4 text="center">Ensalada Cesar Clásica / con Pollo</h4>
-                                <small>Precio.- $0000,00</small>
+                                <small>Precio.- $4.000,00</small>
                             </div>
                         </a>
+                    </div>
+                    <div class="comidas-actions">
+                        <button class="agregarAlCarrito" onclick="addToCart('Ensalada Cesar Clásica / con Pollo', 4000)">Agregar al carrito</button>
+                        <!-- Controles para modificar la cantidad -->
+                        <div class="cantidad-controls" style="display: none">
+                            <button class="btn-modificar" onclick="modificarCantidad('Ensalada Cesar Clásica / con Pollo', -1)">-</button>
+                            <span class="cantidad">1</span>
+                            <button class="btn-modificar" onclick="modificarCantidad('Ensalada Cesar Clásica / con Pollo', 1)">+</button>
+                            <button class="btn-eliminar" onclick="eliminarProducto('Ensalada Cesar Clásica / con Pollo')">🗑</button>
+                        </div>
                     </div>
                 </div>
 
@@ -131,9 +166,19 @@
 
                             <div class="comidas-info">
                                 <h4 text="center">Pasta Alfredo con Pollo</h4>
-                                <small>Precio.- $0000,00</small>
+                                <small>Precio.- $4.000,00</small>
                             </div>
                         </a>
+                    </div>
+                    <div class="comidas-actions">
+                        <button class="agregarAlCarrito" onclick="addToCart('Pasta Alfredo con Pollo', 4000)">Agregar al carrito</button>
+                        <!-- Controles para modificar la cantidad -->
+                        <div class="cantidad-controls" style="display: none">
+                            <button class="btn-modificar" onclick="modificarCantidad('Pasta Alfredo con Pollo', -1)">-</button>
+                            <span class="cantidad">1</span>
+                            <button class="btn-modificar" onclick="modificarCantidad('Pasta Alfredo con Pollo', 1)">+</button>
+                            <button class="btn-eliminar" onclick="eliminarProducto('Pasta Alfredo con Pollo')">🗑</button>
+                        </div>
                     </div>
                 </div>
 
@@ -144,9 +189,19 @@
 
                             <div class="comidas-info">
                                 <h4 text="center">Cachitos de Jamón/ Jamón y Queso</h4>
-                                <small>Precio.- $0000,00</small>
+                                <small>Precio.- $1.000,00</small>
                             </div>
                         </a>
+                    </div>
+                    <div class="comidas-actions">
+                        <button class="agregarAlCarrito" onclick="addToCart('Cachitos de Jamón/ Jamón y Queso', 1000)">Agregar al carrito</button>
+                        <!-- Controles para modificar la cantidad -->
+                        <div class="cantidad-controls" style="display: none">
+                            <button class="btn-modificar" onclick="modificarCantidad('Cachitos de Jamón/ Jamón y Queso', -1)">-</button>
+                            <span class="cantidad">1</span>
+                            <button class="btn-modificar" onclick="modificarCantidad('Cachitos de Jamón/ Jamón y Queso', 1)">+</button>
+                            <button class="btn-eliminar" onclick="eliminarProducto('Cachitos de Jamón/ Jamón y Queso')">🗑</button>
+                        </div>
                     </div>
                 </div>
 
@@ -157,9 +212,19 @@
 
                             <div class="comidas-info">
                                 <h4 text="center">Junco-Parrilla</h4>
-                                <small>Precio.- $0000,00</small>
+                                <small>Precio.- $8.000,00</small>
                             </div>
                         </a>
+                    </div>
+                    <div class="comidas-actions">
+                        <button class="agregarAlCarrito" onclick="addToCart('Junco-Parrilla', 8000)">Agregar al carrito</button>
+                        <!-- Controles para modificar la cantidad -->
+                        <div class="cantidad-controls" style="display: none">
+                            <button class="btn-modificar" onclick="modificarCantidad('Junco-Parrilla', -1)">-</button>
+                            <span class="cantidad">1</span>
+                            <button class="btn-modificar" onclick="modificarCantidad('Junco-Parrilla', 1)">+</button>
+                            <button class="btn-eliminar" onclick="eliminarProducto('Junco-Parrilla')">🗑</button>
+                        </div>
                     </div>
                 </div>
 
@@ -170,9 +235,19 @@
 
                             <div class="comidas-info">
                                 <h4 text="center">Pan de Jamón</h4>
-                                <small>Precio.- $0000,00</small>
+                                <small>Precio.- $5.000,00</small>
                             </div>
                         </a>
+                    </div>
+                    <div class="comidas-actions">
+                        <button class="agregarAlCarrito" onclick="addToCart('Pan de Jamón', 5000)">Agregar al carrito</button>
+                        <!-- Controles para modificar la cantidad -->
+                        <div class="cantidad-controls" style="display: none">
+                            <button class="btn-modificar" onclick="modificarCantidad('Pan de Jamón', -1)">-</button>
+                            <span class="cantidad">1</span>
+                            <button class="btn-modificar" onclick="modificarCantidad('Pan de Jamón', 1)">+</button>
+                            <button class="btn-eliminar" onclick="eliminarProducto('Pan de Jamón')">🗑</button>
+                        </div>
                     </div>
                 </div>
 
@@ -183,9 +258,19 @@
 
                             <div class="comidas-info">
                                 <h4 text="center">Roles de Pan de Jamón</h4>
-                                <small>Precio.- $0000,00</small>
+                                <small>Precio.- $1.000,00</small>
                             </div>
                         </a>
+                    </div>
+                    <div class="comidas-actions">
+                        <button class="agregarAlCarrito" onclick="addToCart('Roles de Pan de Jamón', 1000)">Agregar al carrito</button>
+                        <!-- Controles para modificar la cantidad -->
+                        <div class="cantidad-controls" style="display: none">
+                            <button class="btn-modificar" onclick="modificarCantidad('Roles de Pan de Jamón', -1)">-</button>
+                            <span class="cantidad">1</span>
+                            <button class="btn-modificar" onclick="modificarCantidad('Roles de Pan de Jamón', 1)">+</button>
+                            <button class="btn-eliminar" onclick="eliminarProducto('Roles de Pan de Jamón')">🗑</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -207,9 +292,19 @@
 
                             <div class="postres-info">
                                 <h4 text="center">Brownies</h4>
-                                <small>Precio.- $0000,00</small>
+                                <small>Precio.- $1.500,00</small>
                             </div>
                         </a>
+                    </div>
+                    <div class="comidas-actions">
+                        <button class="agregarAlCarrito" onclick="addToCart('Brownies', 1500)">Agregar al carrito</button>
+                        <!-- Controles para modificar la cantidad -->
+                        <div class="cantidad-controls" style="display: none">
+                            <button class="btn-modificar" onclick="modificarCantidad('Brownies', -1)">-</button>
+                            <span class="cantidad">1</span>
+                            <button class="btn-modificar" onclick="modificarCantidad('Brownies', 1)">+</button>
+                            <button class="btn-eliminar" onclick="eliminarProducto('Brownies')">🗑</button>
+                        </div>
                     </div>
                 </div>
 
@@ -220,9 +315,19 @@
 
                             <div class="postres-info">
                                 <h4 text="center">Quesillo / Flan</h4>
-                                <small>Precio.- $0000,00</small>
+                                <small>Precio.- $1.500,00</small>
                             </div>
                         </a>
+                    </div>
+                    <div class="comidas-actions">
+                        <button class="agregarAlCarrito" onclick="addToCart('Quesillo / Flan', 1500)">Agregar al carrito</button>
+                        <!-- Controles para modificar la cantidad -->
+                        <div class="cantidad-controls" style="display: none">
+                            <button class="btn-modificar" onclick="modificarCantidad('Quesillo / Flan', -1)">-</button>
+                            <span class="cantidad">1</span>
+                            <button class="btn-modificar" onclick="modificarCantidad('Quesillo / Flan', 1)">+</button>
+                            <button class="btn-eliminar" onclick="eliminarProducto('Quesillo / Flan')">🗑</button>
+                        </div>
                     </div>
                 </div>
 
@@ -234,9 +339,19 @@
 
                             <div class="postres-info">
                                 <h4 text="center">Roles de Canela / con Chocolate</h4>
-                                <small>Precio.- $0000,00</small>
+                                <small>Precio.- $1.000,00</small>
                             </div>
                         </a>
+                    </div>
+                    <div class="comidas-actions">
+                        <button class="agregarAlCarrito" onclick="addToCart('Roles de Canela / con Chocolate', 1000)">Agregar al carrito</button>
+                        <!-- Controles para modificar la cantidad -->
+                        <div class="cantidad-controls" style="display: none">
+                            <button class="btn-modificar" onclick="modificarCantidad('Roles de Canela / con Chocolate', -1)">-</button>
+                            <span class="cantidad">1</span>
+                            <button class="btn-modificar" onclick="modificarCantidad('Roles de Canela / con Chocolate', 1)">+</button>
+                            <button class="btn-eliminar" onclick="eliminarProducto('Roles de Canela / con Chocolate')">🗑</button>
+                        </div>
                     </div>
                 </div>
 
@@ -247,9 +362,19 @@
 
                             <div class="postres-info">
                                 <h4 text="center">Torta Tres Leches</h4>
-                                <small>Precio.- $0000,00</small>
+                                <small>Precio.- $2.500,00</small>
                             </div>
                         </a>
+                    </div>
+                    <div class="comidas-actions">
+                        <button class="agregarAlCarrito" onclick="addToCart('Torta Tres Leches', 2500)">Agregar al carrito</button>
+                        <!-- Controles para modificar la cantidad -->
+                        <div class="cantidad-controls" style="display: none">
+                            <button class="btn-modificar" onclick="modificarCantidad('Torta Tres Leches', -1)">-</button>
+                            <span class="cantidad">1</span>
+                            <button class="btn-modificar" onclick="modificarCantidad('Torta Tres Leches', 1)">+</button>
+                            <button class="btn-eliminar" onclick="eliminarProducto('Torta Tres Leches')">🗑</button>
+                        </div>
                     </div>
                 </div>
 
@@ -260,9 +385,19 @@
 
                             <div class="postres-info">
                                 <h4 text="center">Ponquesitos / Cupcakes</h4>
-                                <small>Precio.- $0000,00</small>
+                                <small>Precio.- $1.000,00</small>
                             </div>
                         </a>
+                    </div>
+                    <div class="comidas-actions">
+                        <button class="agregarAlCarrito" onclick="addToCart('Ponquesitos / Cupcakes', 1000)">Agregar al carrito</button>
+                        <!-- Controles para modificar la cantidad -->
+                        <div class="cantidad-controls" style="display: none">
+                            <button class="btn-modificar" onclick="modificarCantidad('Ponquesitos / Cupcakes', -1)">-</button>
+                            <span class="cantidad">1</span>
+                            <button class="btn-modificar" onclick="modificarCantidad('Ponquesitos / Cupcakes', 1)">+</button>
+                            <button class="btn-eliminar" onclick="eliminarProducto('Ponquesitos / Cupcakes')">🗑</button>
+                        </div>
                     </div>
                 </div>
 
@@ -273,9 +408,19 @@
 
                             <div class="postres-info">
                                 <h4 text="center">Golfeados con Queso Rallado</h4>
-                                <small>Precio.- $0000,00</small>
+                                <small>Precio.- $1.000,00</small>
                             </div>
                         </a>
+                    </div>
+                    <div class="comidas-actions">
+                        <button class="agregarAlCarrito" onclick="addToCart('Golfeados con Queso Rallado', 1000)">Agregar al carrito</button>
+                        <!-- Controles para modificar la cantidad -->
+                        <div class="cantidad-controls" style="display: none">
+                            <button class="btn-modificar" onclick="modificarCantidad('Golfeados con Queso Rallado', -1)">-</button>
+                            <span class="cantidad">1</span>
+                            <button class="btn-modificar" onclick="modificarCantidad('Golfeados con Queso Rallado', 1)">+</button>
+                            <button class="btn-eliminar" onclick="eliminarProducto('Golfeados con Queso Rallado')">🗑</button>
+                        </div>
                     </div>
                 </div>
 
@@ -286,9 +431,19 @@
 
                             <div class="postres-info">
                                 <h4 text="center">Torta Chocolatosa Matilda(Entera / Porción)</h4>
-                                <small>Precio.- $0000,00</small>
+                                <small>Precio.- $2.500,00</small>
                             </div>
                         </a>
+                    </div>
+                    <div class="comidas-actions">
+                        <button class="agregarAlCarrito" onclick="addToCart('Torta Chocolatosa Matilda(Entera / Porción)', 2500)">Agregar al carrito</button>
+                        <!-- Controles para modificar la cantidad -->
+                        <div class="cantidad-controls" style="display: none">
+                            <button class="btn-modificar" onclick="modificarCantidad('Torta Chocolatosa Matilda(Entera / Porción)', -1)">-</button>
+                            <span class="cantidad">1</span>
+                            <button class="btn-modificar" onclick="modificarCantidad('Torta Chocolatosa Matilda(Entera / Porción)', 1)">+</button>
+                            <button class="btn-eliminar" onclick="eliminarProducto('Torta Chocolatosa Matilda(Entera / Porción)')">🗑</button>
+                        </div>
                     </div>
                 </div>
 
@@ -299,9 +454,19 @@
 
                             <div class="postres-info">
                                 <h4 text="center">Pie de Limón / Maracuyá</h4>
-                                <small>Precio.- $0000,00</small>
+                                <small>Precio.- $2.500,00</small>
                             </div>
                         </a>
+                    </div>
+                    <div class="comidas-actions">
+                        <button class="agregarAlCarrito" onclick="addToCart('Pie de Limón / Maracuyá', 2500)">Agregar al carrito</button>
+                        <!-- Controles para modificar la cantidad -->
+                        <div class="cantidad-controls" style="display: none">
+                            <button class="btn-modificar" onclick="modificarCantidad('Pie de Limón / Maracuyá', -1)">-</button>
+                            <span class="cantidad">1</span>
+                            <button class="btn-modificar" onclick="modificarCantidad('Pie de Limón / Maracuyá', 1)">+</button>
+                            <button class="btn-eliminar" onclick="eliminarProducto('Pie de Limón / Maracuyá')">🗑</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -565,16 +730,16 @@
                 </div>
             </div>
 
-        <!--ENLACES-->
-        <div class="footer-section">
-            <h4><strong>Nosotros</strong></h4>
-            <ul class="footer-links">
-                <li><a href="#comidas"><strong>Comidas</strong></a></li>
-                <li><a href="#postres"><strong>Postres</strong></a></li>
-                <li><a href="#registro"><strong>Pedidos</strong></a></li>
-                <li><a href="#contact"><strong>Contáctanos</strong></a></li>
-            </ul>
-        </div>
+            <!--ENLACES-->
+            <div class="footer-section">
+                <h4><strong>Nosotros</strong></h4>
+                <ul class="footer-links">
+                    <li><a href="#comidas"><strong>Comidas</strong></a></li>
+                    <li><a href="#postres"><strong>Postres</strong></a></li>
+                    <li><a href="#registro"><strong>Pedidos</strong></a></li>
+                    <li><a href="#contact"><strong>Contáctanos</strong></a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 

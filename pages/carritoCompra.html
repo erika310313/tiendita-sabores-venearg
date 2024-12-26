@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <link rel="stylesheet" href="../CSS/carritoCompra.css">
+
+</head>
+<body>
+    <div class="titulos">
+        <img class="" src="../img/Logo Sabores Venearg (1).png" alt="" width="200" height="200">
+        <h1>Carrito de Compras</h1>
+    </div>
+   
+    <div id="productos">
+        <div class="producto">
+            <img src="../img/pasticho.JPG" alt="" width="100">
+            <span>Pasticho / Lasagna de Carne - $3.000,00</span>
+            <span>Stock: <span id="stock-pasticho">10</span></span>
+            <button onclick="agregarAlCarrito('Pasticho / Lasagna de Carne', 3000, 'pasticho')">Agregar</button>
+        </div>
+        <div class="producto">
+            <img src="../img/tequeños.JPG" alt="" width="100">
+            <span>Tequeños / Deditos de Queso - $3.000,00</span>
+            <span>Stock: <span id="stock-tequenios">15</span></span>
+            <button onclick="agregarAlCarrito('Tequenios / Deditos de Queso', 3000, 'tequenios')">Agregar</button>
+        </div>
+        
+    </div>
+
+    <div id="carrito">
+        <!-- <h2>Carrito de Compras</h2> -->
+        <ul id="lista-carrito"></ul>
+        <p>Subtotal: $<span id="subtotal-carrito">0</span></p>
+        <p>Descuento: $<span id="descuento-carrito">0</span></p>
+        <p>IVA (21%): $<span id="iva-carrito">0</span></p>
+        <p><strong>Total: $<span id="total-carrito">0</span></strong></p>
+        <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+        <button onclick="mostrarCheckout()">Checkout</button>
+    </div>
+
+    <!-- Modal de Checkout -->
+    <div id="checkout-modal">
+        <div class="checkout-content">
+            <h2>Finalizar Compra</h2>
+            <p>Subtotal: $<span id="modal-subtotal">0</span></p>
+            <p>Descuento: $<span id="modal-descuento">0</span></p>
+            <p>IVA: $<span id="modal-iva">0</span></p>
+            <p><strong>Total a Pagar: $<span id="modal-total">0</span></strong></p>
+            <button onclick="realizarCompra()">Confirmar Compra</button>
+            <button onclick="cerrarCheckout()">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="../JS/carritoCompra.js"></script>
+</body>
+</html>
