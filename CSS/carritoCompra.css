@@ -44,6 +44,27 @@ h1:hover{
     color: #000000;
 }
 
+h2{
+    font-weight: 100;
+    letter-spacing: -1px;
+    /*---------------------*/
+    background: #35b5babe;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #35b5babe, #f1abc9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #35b5babe, #f1abc9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-color: transparent;
+    color: #393939;
+    /*---------------------*/
+    margin-bottom: 50px;
+    font-size: 30px;
+    text-align: center;
+    color: #8b1151;
+    padding: 10px;
+}
+
+h2:hover{
+    color: #000000;
+}
+
 .producto {
     background-color: #f4f4f4;
     border: 1px solid #ddd;
@@ -52,6 +73,7 @@ h1:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 20px;
 }
 
 #carrito {
@@ -59,7 +81,9 @@ h1:hover{
     background-color: #f4f4f4;
     border: 1px solid #ddd;
     padding: 15px;
+    font-size: 20px;
 }
+
 button {
     background-color: #813689c2;
     border-radius: 10px;
@@ -69,7 +93,9 @@ button {
     cursor: pointer;
     margin: 5px;
     transition: all .5s;
+    font-size: 20px;
 }
+
 button:hover {
     transition: all .5s;
     background-color: #35b5ba;  
@@ -78,14 +104,17 @@ button:hover {
     cursor: pointer;
     box-shadow: 0px 0px 10px 4px #7becf0;
 }
+
 .agotado {
     opacity: 0.5;
     cursor: not-allowed;
 }
+
 .descuento {
     color: #8b1151;
     font-weight: bold;
 }
+
 #checkout-modal {
     display: none;
     position: fixed;
@@ -96,10 +125,13 @@ button:hover {
     background-color: rgba(0,0,0,0.5);
     justify-content: center;
     align-items: center;
+    font-size: 20px;
 }
+
 .checkout-content {
-    background-color: white;
+    background-color: #f4f4f4;
     padding: 20px;
     border-radius: 10px;
-    width: 300px;
+    width: 500px;
 }
+

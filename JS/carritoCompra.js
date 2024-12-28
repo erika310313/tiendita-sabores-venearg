@@ -6,11 +6,95 @@
         stock: 10,
         descuento: 0.1  // 10% de descuento
     },
-    tequenios: { 
-        nombre: 'Tequeños / Deditos de Queso', 
+    tequenio: { 
+        nombre: 'Tequenio / Deditos de Queso', 
         precio: 3000, 
         stock: 15,
         descuento: 0.05  // 5% de descuento
+    },
+    ensalada: { 
+        nombre: 'Ensalada Cesar Clasica / con Pollo', 
+        precio: 4000, 
+        stock: 10,
+        descuento: 0.05  // 5% de descuento
+    },
+    pasta: { 
+        nombre: 'Pasta Alfredo con Pollo', 
+        precio: 4000, 
+        stock: 10,
+        descuento: 0.05  // 5% de descuento
+    },
+    cachito: { 
+        nombre: 'Cachitos de Jamon/ Jamon y Queso', 
+        precio: 1000, 
+        stock: 20,
+        descuento: 0  // 0% de descuento
+    },
+    parrilla: { 
+        nombre: 'Junco-Parrilla', 
+        precio: 8000, 
+        stock: 10,
+        descuento: 0.1  // 10% de descuento
+    },
+    panJamon: { 
+        nombre: 'Pan de Jamon', 
+        precio:5000, 
+        stock: 10,
+        descuento: 0.1  // 10% de descuento
+    },
+    rolPanJamon: { 
+        nombre: 'Roles de Pan de Jamon', 
+        precio:1000, 
+        stock: 20,
+        descuento: 0 // 0% de descuento
+    },
+    brownie: { 
+        nombre: 'Brownies', 
+        precio:1500, 
+        stock: 20,
+        descuento: 0 // 0% de descuento
+    },
+    quesillo: { 
+        nombre: 'Quesillo / Flan', 
+        precio:1500, 
+        stock: 20,
+        descuento: 0 // 0% de descuento
+    },
+    rolCanela: { 
+        nombre: 'Roles de Canela / con Chocolate', 
+        precio:1000, 
+        stock: 20,
+        descuento: 0 // 0% de descuento
+    },
+    tortaTresLeches: { 
+        nombre: 'Torta Tres Leche', 
+        precio:2500, 
+        stock: 15,
+        descuento: 0.5 // 5% de descuento
+    },
+    ponquesito: { 
+        nombre: 'Ponquesitos / Cupcakes', 
+        precio:1000, 
+        stock: 25,
+        descuento: 0 // 0% de descuento
+    },
+    golfeado: { 
+        nombre: 'Golfeados con Queso Rallado', 
+        precio:1000, 
+        stock: 20,
+        descuento: 0 // 0% de descuento
+    },
+    tortaMatilda: { 
+        nombre: 'Torta Chocolatosa Matilda(Entera / Porción)', 
+        precio:2500, 
+        stock: 15,
+        descuento: 0.5 // 0% de descuento
+    },
+    pieLimon: { 
+        nombre: 'Pie de Limón / Maracuyá', 
+        precio:2500, 
+        stock: 10,
+        descuento: 0.5 // 0% de descuento
     },
     
 };
